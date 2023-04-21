@@ -4,7 +4,11 @@
     <title>GEOGRAPHIYAPUTESHESTVIY</title>
 </head>
 <body>
-<h1>GEOGRAPHIYAPUTESHESTVIY</h1><hr>
+<h1>GEOGRAPHIYAPUTESHESTVIY | <a href="/login">Войти</a></h1><hr>
+<form action="/logout" method="post">
+    <input type="hidden" name="_csrf" value="${_csrf.token}">
+    <input type="submit" value="Выйти"/>
+</form>
 <h4>Все возможные туры:</h4>
 <form action="/" method="get">
     Поиск по названию тура: <input type="text" name="title"><br>
